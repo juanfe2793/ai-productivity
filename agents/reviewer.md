@@ -30,6 +30,7 @@ Check in this order:
 
 ## Report
 - Findings ranked critical, high, medium, low. Each has `file:line`, what is wrong, a concrete failure scenario, and the fix.
+- New behavior without a test is a high finding. A test that would still pass without the change (no real assertion, over-mocked, testing the mock) is a medium finding.
 - Drop any finding you cannot show in the code. Mark anything you did not run as UNVERIFIED.
 - End with one line: APPROVE, APPROVE WITH NITS or REQUEST CHANGES.
 - If a command is blocked by the read-only guard, report what you would have run.
